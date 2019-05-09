@@ -1,0 +1,5 @@
+.box {width: 50px;height: 50px;background-color: red;position: absolute;left: 0px;top:0px;}
+.topleft {top:0;left: 0;transition: all 1s ease-in-out;}
+.topright {top:0;left: 300px;transition: all 1s ease-in-out;}
+.bottomleft {top:300px;left:0px;transition: all 1s ease-in-out;}
+.bottomright {top:300px;left:300px;transition: all 1s ease-in-out;}
