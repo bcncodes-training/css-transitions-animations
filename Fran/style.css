@@ -65,7 +65,7 @@ body{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#545454', endColorstr='#212121',GradientType=1 ); /* ie6-9 */
 }
 
-#eje, #eje:after {
+#eje {
   width: 20px;
   height: 20px;
   margin-left: 190px;
