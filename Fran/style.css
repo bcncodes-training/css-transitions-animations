@@ -1,0 +1,77 @@
+
+/* RESET */
+
+body{
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/**********/
+
+@keyframes movimientoaguja{
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes coloragujasec{
+  0% {background-color: silver;}
+  95% {background-color: white;}
+  100% {background-color: yellow;}
+}
+
+
+
+body{
+  background-color:aliceblue;
+}
+#clock {
+  width: 400px;
+  height: 400px;
+  margin: 20px auto;
+  border: 10px solid black;
+  border-radius: 50%;
+  position: relative;
+  background-color: skyblue;
+
+}
+
+#seconds {
+  width: 4px;
+  height: 180px;
+  background-color: silver;
+  margin-left: 198px;
+  margin-top: 20px;
+  position: absolute;
+  transform-origin: bottom;
+  animation: movimientoaguja linear 60s infinite, coloragujasec ease-in-out 60s infinite;
+  z-index: 2;
+}
+
+#minutes {
+  width: 6px;
+  height: 140px;
+  background-color: darkslategray;
+  margin-left: 198px;
+  margin-top: 60px;
+  transform-origin: bottom;
+  position: absolute;
+  animation: movimientoaguja linear 3600s infinite;
+  z-index: 1;
+}
+
+#hours {
+  width: 8px;
+  height: 120px;
+  background-color: black;
+  margin-left: 196px;
+  margin-top: 35px;
+  transform-origin: bottom;
+  transform: translatey(45px);
+  position: absolute;
+  color: red;
+  border-radius: 50px;
+ 
+}
+
+
+
