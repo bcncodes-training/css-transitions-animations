@@ -1,15 +1,28 @@
+@-webkit-keyframes canviColorFons{
+    0% {background-color: red;}
+    25% {background-color: yellow;}
+    50% {background-color: blue;}
+    100% {background-color: green;}  
+}
 @keyframes canviColorFons{
     0% {background-color: red;}
     25% {background-color: yellow;}
     50% {background-color: blue;}
     100% {background-color: green;}  
 }
+@-webkit-keyframes mou{
+    0% {margin-left: 0;}
+    25% {margin-left: 25%;-webkit-transform: rotate(120deg);transform: rotate(120deg);}
+    50% {margin-left: 40%;-webkit-transform: rotate(240deg);transform: rotate(240deg);}
+    95% {margin-left: 90%;-webkit-transform: rotate(360deg);transform: rotate(360deg);}   
+    100% {margin-left: 95%;-webkit-transform: scale(0.8,1);transform: scale(0.8,1);}   
+}
 @keyframes mou{
     0% {margin-left: 0;}
-    25% {margin-left: 25%;transform: rotate(120deg);}
-    50% {margin-left: 40%;transform: rotate(240deg);}
-    95% {margin-left: 90%;transform: rotate(360deg);}   
-    100% {margin-left: 95%;transform: scale(0.8,1);}   
+    25% {margin-left: 25%;-webkit-transform: rotate(120deg);transform: rotate(120deg);}
+    50% {margin-left: 40%;-webkit-transform: rotate(240deg);transform: rotate(240deg);}
+    95% {margin-left: 90%;-webkit-transform: rotate(360deg);transform: rotate(360deg);}   
+    100% {margin-left: 95%;-webkit-transform: scale(0.8,1);transform: scale(0.8,1);}   
 }
-.canviColor{animation: canviColorFons 5s linear infinite alternate;}
-.canviPosicio>div{border-radius: 50%;width: 50px;height: 50px;background-color: khaki;animation: mou 5s linear 0s infinite alternate,canviColorFons 5s linear infinite alternate;}
+.canviColor{-webkit-animation: canviColorFons 5s linear infinite alternate;animation: canviColorFons 5s linear infinite alternate;}
+.canviPosicio>div{border-radius: 50%;width: 50px;height: 50px;background-color: khaki;-webkit-animation: mou 5s linear 0s infinite alternate,canviColorFons 5s linear infinite alternate;animation: mou 5s linear 0s infinite alternate,canviColorFons 5s linear infinite alternate;}

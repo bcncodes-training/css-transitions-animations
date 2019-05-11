@@ -5,6 +5,7 @@ Click on the large ball on the left to see the animation.
 */
 .anim:active .ball-one {
     left: 150px;
+    -webkit-transition: left .5s ease-in;
     transition: left .5s ease-in;
   }
   
@@ -20,6 +21,7 @@ Click on the large ball on the left to see the animation.
     /* Double hint: Don't forget about transition-delay! */
   
   left: 500px;
+  -webkit-transition: left .5s ease-in .4s;
   transition: left .5s ease-in .4s;
   }
   

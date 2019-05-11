@@ -13,7 +13,8 @@ html, body {
 	left:50%;
 	width:250px;
 	height: 300px;
-	transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	        transform:translateX(-50%);
 	border:none;
 }
 
@@ -23,9 +24,11 @@ html, body {
 	left:0px;
 	width:inherit;
 	height: inherit;	
-	transform-origin: left bottom;
+	-webkit-transform-origin: left bottom;	
+	        transform-origin: left bottom;
 	border: none;
 	outline: none;
+	-webkit-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 }
 
@@ -38,54 +41,75 @@ html, body {
 
 .card:hover {
 	outline: 3px solid red;
+	-webkit-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 	
 }
 
 .deck:hover .card:nth-child(1) {
-	transform:rotate(-20deg);
+	-webkit-transform:rotate(-20deg);
+	        transform:rotate(-20deg);
+	-webkit-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 
 }
 
 .deck:hover .card:nth-child(1):hover {
-	transform:scale(1.2,1.2) rotate(-20deg);
+	-webkit-transform:scale(1.2,1.2) rotate(-20deg);
+	        transform:scale(1.2,1.2) rotate(-20deg);
+	-webkit-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 }
 
 .deck:hover .card:nth-child(2) {
-	transform:rotate(-10deg);
+	-webkit-transform:rotate(-10deg);
+	        transform:rotate(-10deg);
+	-webkit-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 }
 
 .deck:hover .card:nth-child(2):hover {
-	transform:scale(1.2,1.2) rotate(-10deg);
+	-webkit-transform:scale(1.2,1.2) rotate(-10deg);
+	        transform:scale(1.2,1.2) rotate(-10deg);
+	-webkit-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 }
 
 .deck:hover .card:nth-child(3) {
-	transform:rotate(0deg);
+	-webkit-transform:rotate(0deg);
+	        transform:rotate(0deg);
+	-webkit-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 }
 .deck:hover .card:nth-child(3):hover {
-	transform:scale(1.2,1.2) rotate(0deg);
+	-webkit-transform:scale(1.2,1.2) rotate(0deg);
+	        transform:scale(1.2,1.2) rotate(0deg);
+	-webkit-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 }
 
 .deck:hover .card:nth-child(4) {
-	transform:rotate(10deg);
+	-webkit-transform:rotate(10deg);
+	        transform:rotate(10deg);
+	-webkit-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 }
 .deck:hover .card:nth-child(4):hover {
-	transform:scale(1.2,1.2) rotate(10deg);
+	-webkit-transform:scale(1.2,1.2) rotate(10deg);
+	        transform:scale(1.2,1.2) rotate(10deg);
+	-webkit-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 }
 
 .deck:hover .card:nth-child(5) {
-	transform:rotate(20deg);
+	-webkit-transform:rotate(20deg);
+	        transform:rotate(20deg);
+	-webkit-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 }
 .deck:hover .card:nth-child(5):hover {
-	transform:scale(1.2,1.2) rotate(20deg);
+	-webkit-transform:scale(1.2,1.2) rotate(20deg);
+	        transform:scale(1.2,1.2) rotate(20deg);
+	-webkit-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 }

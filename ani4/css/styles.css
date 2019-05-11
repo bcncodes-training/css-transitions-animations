@@ -15,7 +15,8 @@ div#main .content {
 	text-align:center;
 	width:200px;
 	top:50%;
-	transform:translate(0 -50%);
+	-webkit-transform:translate(0 -50%);
+	        transform:translate(0 -50%);
 	font-size:24pt;
 }
 
@@ -29,7 +30,9 @@ div#main .topleft {
 	background: red;
 	
 	/*! transform: rotate(90deg); */
-	transform-origin: 0 0;
+	-webkit-transform-origin: 0 0;
+	        transform-origin: 0 0;
+	-webkit-transition: all 2s ease-in-out;
 	transition: all 2s ease-in-out;
 }
 
@@ -42,7 +45,10 @@ div#main .topright {
 	left: 100px;
 	background: yellow;
 
-	transform-origin: 100px 0;
+	-webkit-transform-origin: 100px 0;
+
+	        transform-origin: 100px 0;
+	-webkit-transition: all 2s ease-in-out;
 	transition: all 2s ease-in-out;
 }
 
@@ -55,7 +61,10 @@ div#main .bottomleft {
 	top: 100px;
 	background: blue;
 
-	transform-origin: 0 100px;
+	-webkit-transform-origin: 0 100px;
+
+	        transform-origin: 0 100px;
+	-webkit-transition: all 2s ease-in-out;
 	transition: all 2s ease-in-out;
 }
 
@@ -68,27 +77,41 @@ div#main .bottomright {
 	top: 100px;
 	background: green;
 
-	transform-origin: 100px 100px;
+	-webkit-transform-origin: 100px 100px;
+
+	        transform-origin: 100px 100px;
+	-webkit-transition: all 2s ease-in-out;
 	transition: all 2s ease-in-out;
 }
 
 div#main:hover .topleft {
-	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	        transform: rotate(90deg);
+	-webkit-transition: all 2s ease-in-out;
 	transition: all 2s ease-in-out;
 }
 div#main:hover .topright {
 
-	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+
+	        transform: rotate(-90deg);
+	-webkit-transition: all 2s ease-in-out;
 	transition: all 2s ease-in-out;
 }
 div#main:hover .bottomleft {
 
-	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+
+	        transform: rotate(-90deg);
+	-webkit-transition: all 2s ease-in-out;
 	transition: all 2s ease-in-out;
 }
 
 div#main:hover .bottomright {
 
-	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+
+	        transform: rotate(90deg);
+	-webkit-transition: all 2s ease-in-out;
 	transition: all 2s ease-in-out;
 }

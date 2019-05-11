@@ -17,7 +17,8 @@ div#loader .red {
 	height: 100px;
 	background: red;
 	opacity: 0.75;
-	transform-origin: 50% 50%;
+	-webkit-transform-origin: 50% 50%;
+	        transform-origin: 50% 50%;
 }
 
 
@@ -30,7 +31,8 @@ div#loader .green {
 	left: 12.5px;
 	background: green;
 	opacity: 0.75;
-	transform-origin: 50% 50%;
+	-webkit-transform-origin: 50% 50%;
+	        transform-origin: 50% 50%;
 }
 
 
@@ -42,23 +44,40 @@ div#loader .blue {
 	top: 25px;
 	left: 25px;
 	background: blue;
-	transform-origin: 50% 50%;
+	-webkit-transform-origin: 50% 50%;
+	        transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes rotating {
+	0% {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
+	}
 }
 
 @keyframes rotating {
 	0% {
-		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
 	}
 	100% {
-		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
 	}
 }
 .loading .red{
-	animation: rotating 5s infinite;
+	-webkit-animation: rotating 5s infinite;
+	        animation: rotating 5s infinite;
 	}
 .loading .green{
-	animation: rotating 10s infinite;
+	-webkit-animation: rotating 10s infinite;
+	        animation: rotating 10s infinite;
 }
 .loading .blue{
-	animation: rotating 15s infinite;
+	-webkit-animation: rotating 15s infinite;
+	        animation: rotating 15s infinite;
 }
