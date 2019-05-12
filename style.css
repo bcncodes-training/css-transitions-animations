@@ -1,43 +1,4 @@
-#clock {
-  width: 400px;
-  height: 400px;
-  margin: 20px auto;
-  border: 10px solid black;
-  border-radius: 50%;
-  position: relative;
-}
-
-#seconds {
-  width: 4px;
-  height: 180px;
-  background-color: gray;
-  margin-left: 198px;
-  margin-top: 20px;
-  animation: rotate 60s infinite linear;
-  position: absolute;
-}
-
-#minutes {
-  width: 6px;
-  height: 140px;
-  background-color: darkslategray;
-  margin-left: 197px;
-  margin-top: 60px;
-  animation: rotate 3600s infinite linear;
-  position: absolute;
-}
-
-#hours {
-  width: 8px;
-  height: 120px;
-  background-color: black;
-  margin-left: 196px;
-  margin-top: 80px;
-  animation: rotate 43200s infinite linear;
-  position: absolute;
-}
-
-@keyframes rotate {
+@keyframes girar {
   0% {
     transform: rotate(0);
     transform-origin: center bottom;
@@ -47,4 +8,92 @@
     transform: rotate(360deg);
     transform-origin: center bottom;
   }
+}
+@keyframes mvOjos {
+  0% {
+    transform: rotate(20deg);
+    left: 60px;
+  }
+  100% {
+    transform: rotate(180deg);
+    left: 0px;
+  }
+}
+#cat{
+  /*background-position: top 0% left 42%;*/
+  background-image: url(cat1.png);
+  background-repeat: no-repeat;
+  min-height: 801px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: row;
+}
+#ojos{
+  clear: both;
+  margin-right: 39px;
+}
+.eye {
+  float: left;
+  margin-left: 54px;
+  margin-top: 76px;
+}
+.eye:first-child {
+  margin-right: -104px;
+}
+.eye:last-child{
+  margin-left: 221px;
+}
+.pupila {
+  position: relative;
+  top:40px;
+  background-color: #000;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: mvOjos 1s infinite alternate-reverse;
+}
+.pupila_brillo {
+  background-color: #fff;
+  border-radius: 45%;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 40px;
+  left: 10px;
+}
+#clock {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  position: relative;
+  background-position: center center;
+  background-image: url(numbers.png);
+  background-repeat: no-repeat;
+}
+#seconds {
+  width: 3px;
+  height: 180px;
+  background-color: #fff;
+  margin-left: 198px;
+  margin-top: 20px;
+  animation: girar 60s infinite linear;
+  position: absolute;
+}
+#minutes {
+  width: 6px;
+  height: 140px;
+  background-color: #fff;
+  margin-left: 197px;
+  margin-top: 60px;
+  animation: girar 3600s infinite linear;
+  position: absolute;
+}
+#hours {
+  width: 8px;
+  height: 120px;
+  background-color: #fff;
+  margin-left: 196px;
+  margin-top: 80px;
+  animation: girar 43200s infinite linear;
+  position: absolute;
 }
