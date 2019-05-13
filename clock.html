@@ -10,8 +10,10 @@
 <body>
   <div id="clock">
     <div id="hours" class="rotate-center3">
+        <div class="hBar">
       <div class="ball"></div>
       <div id="hourBar" class="pulsation5"></div>
+        </div>
     </div>
     <div class="mickey"></div>
     <div class="numbers">
@@ -21,18 +23,24 @@
       <div id="dotze" class="pulsation60">12</div>
     </div>
     <div id="minutes" class="rotate-center2">
+      <div class="minBar">      
       <div class="ball"></div>
-      <div id="minuteBar" class="pulsation1"></div>
+        <div id="minuteBar" class="pulsation1"></div>
+      </div>
     </div>
     <div id="seconds" class="rotate-center">
+      <div class="secBar">
       <div class="ball"></div>
       <div id="secondBar"></div>
+    </div>
     </div>
   </div>
   <div id="clock2">
     <div id="hours" class="rotate-center3">
       <!--<div class="ball"></div>-->
+    <div class="hBar">
       <div id="hourBar" class="pulsation5"></div>
+    </div>
     </div>
     <div class="mickey"></div>
     <div class="numbers">
@@ -43,14 +51,18 @@
     </div>
     <div id="minutes" class="rotate-center2">
       <!--<div class="ball"></div>-->
+      <div class="minBar"> 
       <div id="minuteBar" class="pulsation1"></div>
+      </div>
     </div>
-    <div id="seconds-clock2" class="rotate-center">
+    <div class="secBar2">    
+      <div id="seconds-clock2" class="rotate-center">        
+      </div>
       <!--<div class="ball"></div>
       <div id="secondBar" class="center-lg"></div>-->
     </div>
   </div>
-
+<script src="./scripts/clockScript.js"></script>
 </body>
 
 </html>
