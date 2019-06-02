@@ -1,0 +1,84 @@
+<!--https://herramientas-online.com/comprimir-descomprimir-css.html-->
+body{
+  background-color:aliceblue;
+}
+#clock {
+  width: 400px;
+  height: 400px;
+  margin: 20px auto;
+  border: 10px solid black;
+  border-radius: 50%;/*circulo*/
+  position: relative;
+  background: radial-gradient(#d8d8d8, #000 80%);/*para colorear el interior degradado*/
+}
+
+#seconds {/*manecilla_segundos*/
+  width: 4px;/*ancho*/
+  height: 180px;/*alto*/
+  background-color: gray;/*color*/
+  margin-left: 198px;
+  margin-top: 20px;
+z-index:1;/*superposicion de capas:>+externa*//*capa inferior*/
+overflow:hidden;/*??*/
+/*mover manecilla_segundos*/
+transform-origin:100% 100%;/*poner origen manecilla segundos en origen para q.rote correctamente*/
+  animation:mover_manecillas 60s linear 0s infinite normal;/*para q.rote siempre a derecha:normal*/
+}
+/*Hay que ponerla a las 12h*/
+#minutes {/*manecilla_minutos*/
+  width: 6px;
+  height: 140px;
+  background-color: darkslategray;
+  margin-left: 198px;/*no se porque no se superpone a los segundos:z-index*/
+  margin-top: 20px;
+z-index:2;/*capa media*/
+/*la ponemos apuntando a las 12h*/
+  position:absolute;
+  bottom:200px;
+/*mover_manecilla_minutos:60min=60m*60s=3600s*/
+transform-origin:100% 100%;/*poner origen manecilla segundos en origen para q.rote correctamente*/
+  animation:mover_manecillas 3600s linear 0s infinite normal;/*para q.rote siempre a derecha:normal*/
+
+}
+/*poner hora a las 12h*/
+#hours {/*manecilla_horas*/
+  width: 8px;/*ancho*/
+  height: 120px;/*alto*/
+  background-color: black;
+  margin-left: 198px;
+  margin-top: 20px;
+z-index:3;/*capa superior*/
+ /*no va bien,mueve horas transform: translateY(-360px); /*poner hora a las 12h*/
+/*para ponerla apuntado a las 12h*/
+  position:absolute;
+  bottom:200px;
+/*mover_manecilla_horas:12h=12h*60m*60s*=43200s*/
+transform-origin:100% 100%;/*poner origen manecilla segundos en origen para q.rote correctamente*/
+  animation:mover_manecillas 43200s linear 0s infinite normal;/*para q.rote siempre a derecha:normal*/
+}
+#center{
+  width: 30px;
+  height: 30px;
+  margin-left: 186px;
+  margin-top: -12px;
+  border: 1px solid black;
+  border-radius: 50%;
+  /*background-color: black;*/
+background: radial-gradient(#d8d8d8, #000 80%);/*para colorear el interior degradado*/
+  z-index: 4;
+  position: absolute;
+}
+/*
+@keyframes moverSegundos{
+  0%{transform:rotate(0deg);}
+  25%{transform:rotate(90deg;)}/*quizas pueda sacar:25,50,75
+  50%{transfom:rotate(180deg);}
+  75%{transform:rotate(270deg);}
+  100%{transform:rotate(360deg);}
+}*/
+
+@keyframes mover_manecillas{
+  0%{transform:rotate(0deg);}
+  100%{transform:rotate(360deg);}
+
+}
